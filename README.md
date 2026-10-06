@@ -26,7 +26,7 @@ This project covers relational schema design, pre-constraint data validation, da
 ## Architecture & Data Pipeline
 
 The pipeline processes raw Kaggle CSV files through an ordered series of reproducible SQL scripts in MySQL 8.0:
-
+```
 [Raw CSVs]
 │
 ▼
@@ -49,7 +49,7 @@ The pipeline processes raw Kaggle CSV files through an ordered series of reprodu
 │
 ▼
 [Tableau Desktop / Hyper Extracts / Interactive Dashboards]
-
+```
 
 ### Central Hub View Pattern (`vw_sales_analysis`)
 All downstream reporting queries read from a central denormalized hub view (`vw_sales_analysis`). This design provides:
