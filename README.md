@@ -89,6 +89,7 @@ All downstream reporting queries read from a central denormalized hub view (`vw_
 ├── tableau/
 │   └── olist_ecommerce_analysis.twbx  # Tableau workbook file (Hyper extract bundled)
 └── README.md
+```
 
 Tableau Dashboards Overview
 ABC / Pareto Analysis: Dynamic category-level concentration showing cumulative revenue share against an 80% threshold. Clicking a category reveals its Top 5 individual products and category-specific ABC classification.
@@ -105,7 +106,7 @@ Reproduction Guide
 Clone this repository:
 
 Bash
-git clone [https://github.com/](https://github.com/)<your-username>/olist-brazilian-ecommerce-analytics.git
+git clone https://github.com/)BartoszZol/olist-brazilian-ecommerce-analytics.git
 cd olist-brazilian-ecommerce-analytics
 Download the CSVs from the Kaggle Olist Dataset.
 
