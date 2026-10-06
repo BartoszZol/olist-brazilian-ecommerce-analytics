@@ -91,29 +91,25 @@ All downstream reporting queries read from a central denormalized hub view (`vw_
 └── README.md
 ```
 
-Tableau Dashboards Overview
-ABC / Pareto Analysis: Dynamic category-level concentration showing cumulative revenue share against an 80% threshold. Clicking a category reveals its Top 5 individual products and category-specific ABC classification.
+## Tableau Dashboards Overview
 
-Logistics & Timeliness: An operational overview pairing high-level KPIs (Lead Time, Dispatch Time, On-Time Delivery Rate, Freight Share) with a synchronized dual-axis chart comparing Payment Approval vs. Dispatch Preparation by seller state, alongside an interstate delivery duration matrix.
+- **ABC / Pareto Analysis:** Dynamic category-level concentration showing cumulative revenue share against an 80% threshold. Clicking a category reveals its Top 5 individual products and category-specific ABC classification.
+- **Logistics & Timeliness:** An operational overview pairing high-level KPIs (Lead Time, Dispatch Time, On-Time Delivery Rate, Freight Share) with a synchronized dual-axis chart comparing Payment Approval vs. Dispatch Preparation by seller state, alongside an interstate delivery duration matrix.
+- **Regional Demand:** Geographic breakdown of top-selling categories across Brazil with interactive drill-downs into Top 10 customer spending and order frequency per state.
+- **Sellers Performance:** Analysis of merchant hubs, state-by-state monthly revenue trends, and top merchant leaderboards.
+- **Trends & Seasonality:** Monthly revenue trends paired with a 3-month trailing moving average, month-over-month growth rates, and a year-normalized seasonality index.
 
-Regional Demand: Geographic breakdown of top-selling categories across Brazil with interactive drill-downs into Top 10 customer spending and order frequency per state.
+## Reproduction Guide
 
-Sellers Performance: Analysis of merchant hubs, state-by-state monthly revenue trends, and top merchant leaderboards.
+1. Clone this repository:
 
-Trends & Seasonality: Monthly revenue trends paired with a 3-month trailing moving average, month-over-month growth rates, and a year-normalized seasonality index.
+```bash
+   git clone https://github.com/BartoszZol/olist-brazilian-ecommerce-analytics.git
+   cd olist-brazilian-ecommerce-analytics
+```
 
-Reproduction Guide
-Clone this repository:
-
-Bash
-git clone https://github.com/)BartoszZol/olist-brazilian-ecommerce-analytics.git
-cd olist-brazilian-ecommerce-analytics
-Download the CSVs from the Kaggle Olist Dataset.
-
-Open your MySQL 8.0 client with local_infile=1 enabled.
-
-In sql/03_data_import.sql, update the file paths to point to your local CSV directory.
-
-Run scripts 01 through 14 sequentially.
-
-Open olist_ecommerce_analysis.twbx directly without needing a database connection.
+2. Download the CSVs from the [Kaggle Olist Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+3. Open your MySQL 8.0 client with `local_infile=1` enabled.
+4. In `sql/03_data_import.sql`, update the file paths to point to your local CSV directory.
+5. Run scripts 01 through 14 sequentially.
+6. Open `olist_ecommerce_analysis.twbx` directly without needing a database connection.
