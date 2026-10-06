@@ -9,7 +9,7 @@ An end-to-end analytics project analyzing ~100k real, anonymized orders (2016–
 
 This project covers relational schema design, pre-constraint data validation, data sanitization, analytical SQL modeling (window functions, CTEs, custom aggregation logic), and executive Tableau dashboards. Built as a core portfolio demonstration during a career transition from customs & logistics operations into data analytics.
 
-> **Interactive Tableau Dashboards:** [View Live on Tableau Public](https://public.tableau.com/app/profile/bartosz.zo.nierowicz/viz/olist_tableau_17909368332890/RegionalDemand?publish=yes)
+> **Interactive Tableau Dashboards:** [View Live on Tableau Public](https://public.tableau.com/app/profile/bartosz.zo.nierowicz/viz/olist_tableau_17909368332890/RegionalDemand)
 ---
 
 ## Executive Summary & Core Insights
